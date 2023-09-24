@@ -1,0 +1,8 @@
+.env
+/venv
+test.py
+test.txt
+picasoAPI/fileApp/__pycache__
+picasoAPI/fileApp/migrations
+picasoAPI/files
+picasoAPI/picasoAPI/__pycache__
