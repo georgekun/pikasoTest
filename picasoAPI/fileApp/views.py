@@ -1,4 +1,4 @@
-from django.shortcuts import render
+
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework import status
@@ -23,7 +23,7 @@ class FileUploadView(generics.CreateAPIView):
     serializer_class = FileSerializer
 
     def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)#получаем сериалайзер
+        serializer = self.get_serializer(data=request.data)
         # Сохраняем объект File с переданными данными
         if serializer.is_valid():
             file_instance = serializer.save()
